@@ -1,0 +1,106 @@
+@import url('https://fonts.cdnfonts.com/css/netflix-font');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.about{
+    background-image: url('assests/images/back.jpg');
+    height: 95vh;
+    background-size: max(1200px, 100vw);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+.about .background{
+    background-color: black;
+    height: 95vh;
+    width: 100%;
+    top: 0;
+    opacity: 0.64;
+    position: absolute;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 13vh;
+    margin-left: 12%;
+    margin-right: 12%;
+    position: relative;
+    z-index: 10;
+    
+}
+/* .left-nav{
+    margin-top: 10px;
+} */
+
+.icon{
+    color: red;
+    fill: red;
+    width: 9.25rem;
+    height: 2.5rem;
+}
+
+.text-container{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Netflix Font', Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    flex-direction: column;
+    height: 80%;
+    gap: 12px;
+}
+
+p:first-child{
+    font-size: 48px;
+    font-weight: 900;
+}
+p:nth-child(2){
+    font-size: 24px;
+    font-weight: 500;
+}
+p:nth-child(3){
+    font-size: 20px;
+    font-weight: 400;
+}
+
+button{
+    align-items: center;
+}
+
+.container{
+    height: 80%;
+    display: flex;
+    justify-content:center;
+}
+
+.text{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.imgs{
+    width: 50%;
+}
+
+.text h2{
+    color: white;
+}
+.text p{
+    color: white;
+}
+
+
+
