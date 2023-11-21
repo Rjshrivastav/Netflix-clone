@@ -1,4 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/netflix-font');
+:root{
+    --font-family: 'Netflix Font', Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
 *{
     margin: 0;
     padding: 0;
@@ -37,6 +40,33 @@ body{
     z-index: 10;
     
 }
+
+.right-nav{
+display: flex;
+justify-content: center;
+}
+
+.lang{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 17px 5px 14px;
+    gap: 8px;
+    background-color: rgba(0,0,0,0.2);
+    border: 1px solid rgba(241, 238, 238, 0.5);
+    border-radius: 5px;
+}
+
+.lang select{
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+    font-size: 15px;
+    border-color: rgba(0,0,0,0.2);
+}
+
+.lang svg{
+    color: white;
+}
 /* .left-nav{
     margin-top: 10px;
 } */
@@ -55,10 +85,10 @@ body{
     color: white;
     justify-content: center;
     align-items: center;
-    font-family: 'Netflix Font', Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-family: var(--font-family);
     flex-direction: column;
     height: 80%;
-    gap: 12px;
+    gap: 20px;
 }
 
 p:first-child{
@@ -66,11 +96,11 @@ p:first-child{
     font-weight: 900;
 }
 p:nth-child(2){
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 27px;
+    font-weight: 400;
 }
 p:nth-child(3){
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
 }
 
@@ -79,28 +109,275 @@ button{
 }
 
 .container{
-    height: 80%;
+    /* height: 80%; */
     display: flex;
     justify-content:center;
+    margin: auto;
 }
 
+.img-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 143px;
+}
 .text{
     width: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     flex-direction: column;
+    margin: auto;
 }
 .imgs{
-    width: 50%;
+    position: relative;
+    /* width: 50%; */
+    margin: auto;
 }
 
 .text h2{
     color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    font-family: var(--font-family);
 }
+
 .text p{
+    color: white;
+    font-family: var(--font-family);
+}
+
+
+.seperation{
+    height: 8px;
+    background-color: rgb(41, 40, 40);
+}
+
+.btn{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+}
+
+.btn-red{
+    background-color: rgb(229,9,20);
+    color: white;
+    font-size: 25px;
+    padding: 12px 30px;
+    border-radius: 5px;
+    border: black;
+    cursor: pointer;
+}
+
+.btn-sm{
+    background-color: rgb(229,9,20);
+    color: white;
+    border: black;
+    font-size: 15px;
+    padding: 6px 14px;
+    border-radius: 4px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px
+}
+
+form input{
+    font-size: 15px;
+    padding: 16px 198px 18px 16px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    border:1px solid rgba(234, 231, 231, 0.5);
+}
+
+.imgs img{
+    position: relative;
+    z-index: 10;
+}
+
+.imgs video{
+    position: absolute;
+    top:92px;
+    left: 85px;
+    width: 470px;
+    height: 279px;
+}
+
+.down{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+
+}
+
+.down img{
+    height: 100px;
+
+}
+
+.down p:first-child{
+    color: white;
+    font-family: var(--font-family);
+}
+
+.down p:last-child{
+    color: blue;
+    font-family: var(--font-family);
+}
+
+
+
+.imgs .vid-2{
+    top: 27px;
+    left: 119px;
+    width: 391px;
+    height: 242px;
+}
+
+.faq .container{
+    flex-direction: column;
+    margin: 60px 120px;
+}
+
+.faq .container h2{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: var(--font-family);
+    margin-bottom: 15px;
+}
+
+.faq .container .box span{
+    color: white;
+    /* text-align: center; */
+    font-size: 28px;
+    /* font-weight: bolder; */
+    font-family: var(--font-family);
+}
+
+.box svg{
+    filter: invert(1);
+    width: 45px;
+    height: 45px;
+}
+
+.container .box{
+    transition: all 0.2s ease-in-out;
+    border: 1px solid black;
+    display: flex;
+    background-color: rgb(45, 44, 44);
+    justify-content: space-between;
+    margin: 5px 60px;
+    padding: 20px 15px;
+    cursor: pointer;
+}
+
+.box:hover{
+    background-color: rgb(29, 28, 28);
+}
+
+
+footer span{
+    color: rgb(161, 157, 157);
+    font-family: var(--font-family);
+}
+
+footer span span{
+    text-decoration: underline;
+}
+
+.box-2{
+        /* display: flex; */
+        /* justify-content: space-between; */
+        margin: 5px 60px;
+        padding: 20px 32px;
+        cursor: pointer;
+}
+
+.faq .container .text-container{
+    margin:30px;
+}
+
+.faq .container .text-container span{
+    color: white;
+    /* text-align: center; */
+    font-size: 22px;
+    /* font-weight: bolder; */
+    font-family: var(--font-family);
+}
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+    position: relative; 
+}
+
+.foot span{
+    margin: 20px;
+}
+.item-holder{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    max-width: 60vw;
+    margin: auto;
+    gap: 15px;
+}
+
+.footer-item a{
+    color: rgb(161, 157, 157);
+    cursor: pointer;
+    font-family: var(--font-family);
+}
+
+
+footer .lang{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 17px 5px 14px;
+    margin: 25px 92px 0px;
+    width: 105px;
+    gap: 8px;
+    background-color: rgba(0,0,0,0.2);
+    border: 1px solid rgba(241, 238, 238, 0.5);
+    border-radius: 5px;
+}
+
+footer .lang select{
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+    font-size: 15px;
+    border-color: rgba(0,0,0,0.2);
+}
+
+footer .lang svg{
     color: white;
 }
 
+footer .t{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 0px 5px 0px;
+    margin: 18px 85px;
+    width: 105px;
+    gap: 8px;
+    background-color: rgba(0,0,0,0.2);
+}
 
-
+footer{
+    margin: 30px 200px 70px 57px;
+}
