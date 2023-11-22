@@ -1,26 +1,29 @@
 @import url('https://fonts.cdnfonts.com/css/netflix-font');
-:root{
-    --font-family: 'Netflix Font', Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+
+:root {
+    --font-family: 'Netflix Font', Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: black;
 }
 
-.about{
+.about {
     background-image: url('assests/images/back.jpg');
     height: 95vh;
     background-size: max(1200px, 100vw);
     background-position: center center;
     background-repeat: no-repeat;
     position: relative;
-    
+
 }
-.about .background{
+
+.about .background {
     background-color: black;
     height: 95vh;
     width: 100%;
@@ -29,7 +32,7 @@ body{
     position: absolute;
 }
 
-.nav{
+.nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,47 +41,48 @@ body{
     margin-right: 12%;
     position: relative;
     z-index: 10;
-    
+
 }
 
-.right-nav{
-display: flex;
-justify-content: center;
+.right-nav {
+    display: flex;
+    justify-content: center;
 }
 
-.lang{
+.lang {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 6px 17px 5px 14px;
     gap: 8px;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(241, 238, 238, 0.5);
     border-radius: 5px;
 }
 
-.lang select{
-    background-color: rgba(0,0,0,0.2);
+.lang select {
+    background-color: rgba(0, 0, 0, 0.2);
     color: white;
     font-size: 15px;
-    border-color: rgba(0,0,0,0.2);
+    border-color: rgba(0, 0, 0, 0.2);
 }
 
-.lang svg{
+.lang svg {
     color: white;
 }
+
 /* .left-nav{
     margin-top: 10px;
 } */
 
-.icon{
+.icon {
     color: red;
     fill: red;
     width: 9.25rem;
     height: 2.5rem;
 }
 
-.text-container{
+.text-container {
     position: relative;
     z-index: 10;
     display: flex;
@@ -91,37 +95,40 @@ justify-content: center;
     gap: 20px;
 }
 
-p:first-child{
+p:first-child {
     font-size: 48px;
     font-weight: 900;
 }
-p:nth-child(2){
+
+p:nth-child(2) {
     font-size: 27px;
     font-weight: 400;
 }
-p:nth-child(3){
+
+p:nth-child(3) {
     font-size: 22px;
     font-weight: 400;
 }
 
-button{
+button {
     align-items: center;
 }
 
-.container{
+.container {
     /* height: 80%; */
     display: flex;
-    justify-content:center;
+    justify-content: center;
     margin: auto;
 }
 
-.img-text{
+.img-text {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 80px 143px;
 }
-.text{
+
+.text {
     width: 50%;
     display: flex;
     justify-content: center;
@@ -129,13 +136,14 @@ button{
     flex-direction: column;
     margin: auto;
 }
-.imgs{
+
+.imgs {
     position: relative;
     /* width: 50%; */
     margin: auto;
 }
 
-.text h2{
+.text h2 {
     color: white;
     font-size: 50px;
     font-weight: bolder;
@@ -143,26 +151,26 @@ button{
     font-family: var(--font-family);
 }
 
-.text p{
+.text p {
     color: white;
     font-family: var(--font-family);
 }
 
 
-.seperation{
+.seperation {
     height: 8px;
     background-color: rgb(41, 40, 40);
 }
 
-.btn{
-    background-color: rgba(0,0,0,0.5);
+.btn {
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     font-weight: bold;
     padding: 3px 8px;
 }
 
-.btn-red{
-    background-color: rgb(229,9,20);
+.btn-red {
+    background-color: rgb(229, 9, 20);
     color: white;
     font-size: 25px;
     padding: 12px 30px;
@@ -171,8 +179,8 @@ button{
     cursor: pointer;
 }
 
-.btn-sm{
-    background-color: rgb(229,9,20);
+.btn-sm {
+    background-color: rgb(229, 9, 20);
     color: white;
     border: black;
     font-size: 15px;
@@ -181,73 +189,89 @@ button{
     margin-left: 20px;
     cursor: pointer;
 }
-form{
+
+form {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:10px
+    gap: 10px
 }
 
-form input{
+form input {
     font-size: 15px;
     padding: 16px 198px 18px 16px;
     border-radius: 5px;
     color: white;
-    background-color: rgba(0,0,0,0.7);
-    border:1px solid rgba(234, 231, 231, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(234, 231, 231, 0.5);
 }
 
-.imgs img{
+.imgs {
     position: relative;
-    z-index: 10;
+    /* z-index: 10; */
 }
 
-.imgs video{
+.imgs video {
     position: absolute;
-    top:92px;
+    top: 92px;
     left: 85px;
     width: 470px;
     height: 279px;
 }
 
-.down{
-    display: flex;
+.down {
+
     justify-content: center;
-    position: relative;
-    z-index: 10;
+    position: absolute;
+    top: 341px;
+    left: 147px;
+    background-color: black;
+    display: flex;
+    width: 344px;
+    height: 105px;
+    border: 1px solid rgba(241, 238, 238, 0.5);
+    border-radius: 10px;
 
 }
 
-.down img{
-    height: 100px;
+.down img {
+    margin: 10px;
 
 }
 
-.down p:first-child{
+.down img:nth-child(3) {
+    margin: 20px 16px 21px 48px;
+}
+
+.te {
+    padding: 30px 18px 20px 5px;
+}
+
+.down .te div {
     color: white;
     font-family: var(--font-family);
+
 }
 
-.down p:last-child{
+.down .te div:nth-child(2) {
     color: blue;
     font-family: var(--font-family);
 }
 
 
-
-.imgs .vid-2{
+.imgs .vid-2 {
     top: 27px;
     left: 119px;
     width: 391px;
     height: 242px;
 }
 
-.faq .container{
+.faq .container {
     flex-direction: column;
     margin: 60px 120px;
 }
 
-.faq .container h2{
+.faq .container h2 {
     color: white;
     text-align: center;
     font-size: 50px;
@@ -256,7 +280,7 @@ form input{
     margin-bottom: 15px;
 }
 
-.faq .container .box span{
+.faq .container .box span {
     color: white;
     /* text-align: center; */
     font-size: 28px;
@@ -264,13 +288,13 @@ form input{
     font-family: var(--font-family);
 }
 
-.box svg{
+.box svg {
     filter: invert(1);
     width: 45px;
     height: 45px;
 }
 
-.container .box{
+.container .box {
     transition: all 0.2s ease-in-out;
     border: 1px solid black;
     display: flex;
@@ -281,33 +305,33 @@ form input{
     cursor: pointer;
 }
 
-.box:hover{
+.box:hover {
     background-color: rgb(29, 28, 28);
 }
 
 
-footer span{
+footer span {
     color: rgb(161, 157, 157);
     font-family: var(--font-family);
 }
 
-footer span span{
+footer span span {
     text-decoration: underline;
 }
 
-.box-2{
-        /* display: flex; */
-        /* justify-content: space-between; */
-        margin: 5px 60px;
-        padding: 20px 32px;
-        cursor: pointer;
+.box-2 {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    margin: 5px 60px;
+    padding: 20px 32px;
+    cursor: pointer;
 }
 
-.faq .container .text-container{
-    margin:30px;
+.faq .container .text-container {
+    margin: 30px;
 }
 
-.faq .container .text-container span{
+.faq .container .text-container span {
     color: white;
     /* text-align: center; */
     font-size: 22px;
@@ -315,20 +339,22 @@ footer span span{
     font-family: var(--font-family);
 }
 
-.foot{
+.foot {
     display: flex;
     justify-content: space-between;
-    position: relative; 
+    position: relative;
 }
 
-.foot span{
+.foot span {
     margin: 20px;
 }
-.item-holder{
+
+.item-holder {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.footer-item{
+
+.footer-item {
     display: flex;
     flex-direction: column;
     max-width: 60vw;
@@ -336,14 +362,14 @@ footer span span{
     gap: 15px;
 }
 
-.footer-item a{
+.footer-item a {
     color: rgb(161, 157, 157);
     cursor: pointer;
     font-family: var(--font-family);
 }
 
 
-footer .lang{
+footer .lang {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -351,23 +377,23 @@ footer .lang{
     margin: 25px 92px 0px;
     width: 105px;
     gap: 8px;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(241, 238, 238, 0.5);
     border-radius: 5px;
 }
 
-footer .lang select{
-    background-color: rgba(0,0,0,0.2);
+footer .lang select {
+    background-color: rgba(0, 0, 0, 0.2);
     color: white;
     font-size: 15px;
-    border-color: rgba(0,0,0,0.2);
+    border-color: rgba(0, 0, 0, 0.2);
 }
 
-footer .lang svg{
+footer .lang svg {
     color: white;
 }
 
-footer .t{
+footer .t {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -375,9 +401,9 @@ footer .t{
     margin: 18px 85px;
     width: 105px;
     gap: 8px;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
-footer{
+footer {
     margin: 30px 200px 70px 57px;
 }
